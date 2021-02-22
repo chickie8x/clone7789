@@ -516,23 +516,41 @@ span.close:hover {
 
     div.sidebar {
         width: 100%;
-        bottom: 0;
+        bottom: -50px;
         border-radius: 0;
-        display: flex;
-        background-image: url("/static/images/sidebar/sidebarBG-mobile.png");
-        background-position: center;
-        background-size: contain;
-        /*background-color: #f7ba22;*/
+        background-image: none;
         right: 0;
         margin: auto;
         top: auto;
-        /*height: 50px;*/
+        height: 100px;
+        overflow: hidden;
+        transition-duration: 0.5s;
     }
 
+    div#float-btn{
+        background-color: #f7ba22;
+        width: fit-content;
+        margin: 0 auto;
+        height: 50px;
+        padding: 0 10px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        color: white;
+        font-size: 14px;
+    }
+
+
+    div.sidebar-content{
+        background-color: #f7ba22;
+        text-align: center;
+    }
+
+
     div.sidebar a {
-        padding: 10px 10px;
+        padding: 16px 10px;
         margin: auto;
         border: none;
+        border-radius: 0;
     }
 
 

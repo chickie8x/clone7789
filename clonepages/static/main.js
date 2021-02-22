@@ -75,7 +75,16 @@ $(document).ready(function () {
         $("#phbtn").css('color','#f7ba22');
     })
 
+    $("#float-btn").click(function () {
+        let displayState = $(".sidebar")[0].style.bottom;
+        if(displayState!="0px"){
+            $(".sidebar")[0].style.bottom = "0px";
+        }
+        else {
+            $(".sidebar")[0].style.bottom = "-50px";
+        }
 
+    })
 
 });
 
