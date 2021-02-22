@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7789</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0ea2bdc334.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+<body>
+<div id="wrapper">
+    <div class="header-wrapper grids">
+
+        <div class="header-logo">
+            <a href="/"><img class="img-fluid mh-100 " src="{% static 'images/logo.png' %}" alt=""></a>
+        </div>
+        <div id="time">
+
+        </div>
+        <div class="theme-selector-wrapper">
+            <i class="fas fa-adjust my-auto"></i>
+            <select class="theme-selector selectpicker" id="themeid">
+                <option value="dark">Tối</option>
+                <option value="light">Sáng</option>
+            </select>
+        </div>
+
+        <div class="header-login">
+            <a id="dangnhap" href="/admin/">Đăng nhập</a>
+        </div>
+        <div class="header-reg d-flex">
+            <a id="dangky" href="#">Đăng ký</a>
+        </div>
+        <div class="navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-orange py-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="/baiviet/"><button class="dropbtn">bài viết</button></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                 <a href="/thethao/"><button class="dropbtn">thể thao</button></a>
+
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/sport1.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/sport2.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/sport3.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/sport4.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="/songbai/"><button class="dropbtn">sòng bài</button></a>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/gamble1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/gamble2.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/gamble3.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/gamble4.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/gamble5.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="/banca/"><button class="dropbtn">bắn cá</button></a>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/fishing1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/fishing2.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="/trochoi/"><button class="dropbtn">trò chơi</button></a>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/game1.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/game2.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/game3.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/game4.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/game5.png' %}" class="sub-menu-img"
+                                                     alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                 <a href="/xoso/"><button class="dropbtn">xổ số</button></a>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/jackpot1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/jackpot2.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/jackpot3.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/jackpot4.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                               <button class="dropbtn">đá gà</button>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/chicken1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/chickie2.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/chicken3.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">game bài 3d</button>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/poker3d1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                    <a href="#"><img src="{% static 'images/submenu/poker3d2.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">e-sport</button>
+                                <div class="dropdown-content row">
+                                    <a href="#"><img src="{% static 'images/submenu/esport1.png' %}"
+                                                     class="sub-menu-img" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">tải ứng dụng</button>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">đại lý</button>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="sidebar">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+</div>
+
+<div class="float-menu">
+    <div class="float-menu-container">
+        <span class="close">&times;</span>
+        <a href="" class="float-menu-item1"><img src="{% static 'images/floatmenu/aside-tai-app.png' %}" class="float-item-img" alt=""></a>
+        <a href="" class="float-menu-item2"><img src="{% static 'images/floatmenu/aside-dang-ky.png' %}" class="float-item-img" alt=""></a>
+        <a href="" class="float-menu-item3"><img src="{% static 'images/floatmenu/aside-dai-ly.png' %}" class="float-item-img" alt=""></a>
+        <a href="" class="float-menu-item4"><img src="{% static 'images/floatmenu/aside-khuyen-mai.png' %}" class="float-item-img" alt=""></a>
+        <a href="" class="float-menu-item5"><img src="{% static 'images/floatmenu/aside-quy-dinh.png' %}" class="float-item-img" alt=""></a>
+    </div>
+</div>
+
+<div class="float-notice">
+    <h5 class="text-center text-white p-2"> Thông báo bảo trì </h5>
+    <span class="close-notice close">&times;</span>
+
+    <div class="notices">
+        <div class="notice-header">
+            UGAMING Sportbooks
+        </div>
+        <div class="notice-content">
+            2021-02-24 09:00:00 ~ Thông báo sau khi hoàn tất
+        </div>
+    </div>
+
+    <div class="notices">
+        <div class="notice-header">
+            VSL Lottery
+        </div>
+        <div class="notice-content">
+            2021-02-24 09:00:00 ~ Thông báo sau khi hoàn tất
+        </div>
+    </div>
+
+</div>
+
+
+{% block content %}
+{% endblock %}
+
+<div class="footer-wrapper">
+    <div class="section-info row mr-0">
+        <div class="info-payment col-lg-4 col-sm-12 d-flex flex-column justify-content-center">
+            <img src="{% static 'images/logo.png' %}" class="info-logo" alt="">
+            <div class="info-content">
+                <span id="display-text">789BET được cấp phép bởi Isle of Man & Cagayan Economic Zone and Free Port. Đây là một tổ chức đa quốc
+                gia, có quy mô hoạt động trải dài khắp khu vực châu Á – Thái Bình Dương. Với kinh nghiệm và uy tín đã
+                phục vụ hơn mười triệu người chơi, 789bet đã cho thấy sự nghiêm túc và tính pháp lý của mình là điều đã
+                được xây dựng lâu đời và hoàn toàn đáng tin cậy.</span><span id="dots">...</span> <span id="readmore">Là một nhà cái trực thuộc tập đoàn M.A.N Entertainment,
+                có trụ sở chính đặt tại thủ đô Manila, Philippines. Đây là tập đoàn được đánh giá là lớn mạnh nhất châu
+                Á về thị trường cá cược trực tuyến với đội ngũ nhân viên khổng lồ. Với sự tin cậy cao đã được kiểm
+                chứng, 789bet hiện tại là một trong những nhà cái được xác thực rõ ràng và có giấy phép được hiệp hội cá
+                cược trực tuyến quốc tế chứng nhận. </span><span id="btn-readmore">Xem thêm</span>
+            </div>
+        </div>
+
+        <div class="guide payment col-lg-4 col-sm-10">
+            <h5 class=" title text-center">Thông tin</h5>
+            <div class="guide-wrapper d-flex flex-row justify-content-center">
+                <div class="guide w-50">
+                    <a href="#" class="guide-link row"> Về 789bet</a>
+                    <a href="#" class="guide-link row"> Điều khoản và điều kiện</a>
+                    <a href="#" class="guide-link row"> Chơi có trách nhiệm</a>
+                    <a href="#" class="guide-link row"> Miễn trách nhiệm</a>
+                    <a href="#" class="guide-link row"> Quyền riêng tư</a>
+                </div>
+                <div class="guide">
+                    <a href="#" class="guide-link row"> Hướng dẫn nạp tiền</a>
+                    <a href="#" class="guide-link row"> Hướng dẫn nạp tiền</a>
+                    <a href="#" class="guide-link row"> Câu hỏi thường gặp</a>
+                    <a href="#" class="guide-link row"> Liên hệ</a>
+                    <a href="#" class="guide-link row"> Đăng ký đại lý</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="payment col-lg-4 col-sm-10">
+            <h5 class="title text-center">Phương thức thanh toán</h5>
+            <div class="row justify-content-center px-4">
+                <img src="{% static 'images/banklogo/vietcombank-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/bidv-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/acb-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/techcombank-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/vietinbank-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/sacombank-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/zalopay-logo.png' %}" class="bank-logo p-2" alt="">
+                <img src="{% static 'images/banklogo/momo-logo.png' %}" class="bank-logo p-2" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-provider">
+        <h5 class="title" id="provider-title">Nhà cung cấp</h5>
+        <div class="row d-flex flex-row">
+            <img src="{% static 'images/footer-provider/ae_lot.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/dg.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/gw.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/kingmaker.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/lc.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/saba.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/sexybcrt.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/tf.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/gpi.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/simpleplay.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/kingmaker.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/sexybcrt.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/gpi.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/ae_lot.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/dg.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/lc.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/tf.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/saba.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/gw.png' %}" class="provider-logo" alt="">
+            <img src="{% static 'images/footer-provider/kingmaker.png' %}" class="provider-logo" alt="">
+
+                <div class="copy-right mx-auto">
+                    <p class="text-center text-white pb-1">Copyright © 789BET Reserved</p>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>

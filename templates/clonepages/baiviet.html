@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="articles-wrapper">
+        {% if articles %}
+            <div class="articles-list">
+                {% for article in articles %}
+                    <a href="{% url 'xembaiviet' article.slug%}" class="article-link">
+                    <div class="article-item ">
+                        <div class="feature-img">
+                            <img src="{{ article.feature_img }}" class="article-feature-img" alt="">
+                        </div>
+                        <div class="article-info">
+                            <p class="article-title">{{ article.title }}</p>
+                            <div class="article-desc">
+                                {{ article.desc }}
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+
+{% endblock %}

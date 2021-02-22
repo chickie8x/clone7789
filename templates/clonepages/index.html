@@ -1,0 +1,574 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  content %}
+
+    <div class="index-wrapper">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img1.jpg' %}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img2.jpg' %}" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img3.jpg' %}" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img4.jpg' %}" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img5.jpg' %}" alt="Fiveth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img6.jpg' %}" alt="Sixth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img7.jpg' %}" alt="Seventh slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'images/indexSlide/img8.jpg' %}" alt="Seventh slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="notification-bar">
+            <p class="notice"><span class="notice-header">Thông tin bảo trì</span><span class="notice-content">UGAMING-Sportsbook  2021-02-19 12:00 ~ 2021-02-19 13:59</span>
+            </p>
+            <p class="notice"><span class="notice-header">Thông tin bảo trì</span><span class="notice-content">UGAMING-Sportsbook  2021-02-19 12:00 ~ 2021-02-19 13:59</span>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="index-content-wrapper">
+        <div class="live-scrore">
+            <div class="score-header">
+                <p>Ligi kuu Bara Regular Season - 17</p>
+            </div>
+            <div class="score-body d-flex flex-row">
+                <div class="team1 d-flex flex-row">
+                    <img src="{% static 'images/indexcontent/teamlogo1.png' %}" class="team-logo" alt="">
+                    <div class="team-name" id="team-name1">PAS Giannina</div>
+                </div>
+                <div class="vs-center">VS</div>
+                <div class="team2 d-flex flex-row">
+                    <div class="team-name" id="team-name2">SAN Carlos</div>
+                    <img src="{% static 'images/indexcontent/teamlogo2.png' %}" class="team-logo" alt="">
+                </div>
+            </div>
+            <div class="score-footer">
+                <div class="timezone">18/02/21 21:00 (GMT +07:00)</div>
+                <div class="bet">
+                    <a href="#">Cược Ngay</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="hometype grids">
+            <div class="hometype-slide">
+                <h4 class="hometype-title">thể thao đề xuất</h4>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators d-none">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'images/indexcontent/hometype/thethao.jpg' %}"
+                                 class="hometype-content-slide-img" alt="">
+                            <div class="slide-content">
+                                Sảnh cược CMD368 là sân chơi giải trí đỉnh cao dành cho thành viên đam mê cá cược thể
+                                thao với tỷ lệ kèo đa dạng, hấp dẫn nhất thị trường. Ngoài ra, tại sảnh cược CMD368
+                                người chơi có thể tham gia đặt cược vào nhiều trận đấu khác nhau bằng cùng một vé cược.
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'images/indexcontent/hometype/thethao2.jpg' %}"
+                                 class="hometype-content-slide-img" alt="">
+                            <div class="slide-content">
+                                Sảnh cược CMD368 là sân chơi giải trí đỉnh cao dành cho thành viên đam mê cá cược thể
+                                thao với tỷ lệ kèo đa dạng, hấp dẫn nhất thị trường. Ngoài ra, tại sảnh cược CMD368
+                                người chơi có thể tham gia đặt cược vào nhiều trận đấu khác nhau bằng cùng một vé cược.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'images/indexcontent/hometype/thethao3.jpg' %}"
+                                 class="hometype-content-slide-img" alt="">
+                            <div class="slide-content">
+                                Sảnh cược SBOBET là một trong những sảnh cá cược lớn và uy tín hàng đầu châu Á với nhiều
+                                hình thức cá cược hấp dẫn. Đặc biệt, các bạn sẽ được đón xem trực tiếp những trận đấu
+                                thể thao trên 789Bet. Người chơi vừa theo dõi, vừa có thể dựa vào diễn biến trận đấu để
+                                đặt cược một cách chính xác nhất.
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="chicken">
+                <h4 class="hometype-title">
+                    sảnh đá gà
+                </h4>
+            </div>
+            <div class="jackpot">
+                <h4 class="hometype-title   ">
+                    xổ số 1 ăn 99.5
+                </h4>
+            </div>
+            <div class="casino">
+                <h4 class="hometype-title">
+                    casino đề xuất
+                </h4>
+                <table class="tictactoe">
+                    <tbody class="tictactoe-body">
+                    <tr>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="t-cell"></td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell">
+                            <div class="bank">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="t-cell"></td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="t-cell"></td>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="t-cell">
+                            <div class="player">
+
+                            </div>
+                        </td>
+                        </td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    <tr>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                        <td class="t-cell"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="home-jackpot-wrapper">
+            <div class="home-jackpot grids">
+                <div class="jackpot-item1">
+                    <h3 class="jackpot-title">
+                        top hũ trong tuần
+                    </h3>
+                    <div class="jackpot-child1">
+                        <div class="">
+                            <h5 class="company">ameba</h5>
+                        </div>
+                        <div class="money">
+                            <span>$354564</span>
+                        </div>
+
+                    </div>
+                    <div class="jackpot-child2">
+                        <div>
+                            <h5 class="company">pracmatic</h5>
+                        </div>
+                        <div class="money">
+                            <span>$3443205</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="jackpot-item2">
+                    <h3 class="jackpot-title">
+                        top thành viên thắng lớn tại 789
+                    </h3>
+                    <div class="jackpot-list-wrapper">
+                        <div class="list-header">
+                            <img src="{% static 'images/indexcontent/homejackpot/icon_champions.svg' %}" alt="">
+                            789bet champions
+                        </div>
+                        <div class="jackpot-list-body">
+                            <div class="list-body">
+                                <div class="list-body-item">
+                                    <div class="item-row">
+                                        <div class="item-row-name">
+                                            <img src="{% static 'images/indexcontent/homejackpot/star.png' %}"
+                                                 class="item-row-img" alt="">
+                                            QUE*******88
+                                        </div>
+                                        <div class="item-row-money">
+                                            <img src="{% static 'images/indexcontent/homejackpot/games_money.png' %}"
+                                                 alt="" class="money-icon">
+                                            <div class="money-amount">
+                                                3,528,364,654
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-row">
+                                        <div class="item-row-name">
+                                            <img src="{% static 'images/indexcontent/homejackpot/star.png' %}"
+                                                 class="item-row-img" alt="">
+                                            TUA*******92
+                                        </div>
+                                        <div class="item-row-money">
+                                            <img src="{% static 'images/indexcontent/homejackpot/games_money.png' %}"
+                                                 alt="" class="money-icon">
+                                            <div class="money-amount">
+                                                4,578,254,154
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-row">
+                                        <div class="item-row-name">
+                                            <img src="{% static 'images/indexcontent/homejackpot/star.png' %}"
+                                                 class="item-row-img" alt="">
+                                            LAN*******90
+                                        </div>
+                                        <div class="item-row-money">
+                                            <img src="{% static 'images/indexcontent/homejackpot/games_money.png' %}"
+                                                 alt="" class="money-icon">
+                                            <div class="money-amount">
+                                                3,954,253,114
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-row">
+                                        <div class="item-row-name">
+                                            <img src="{% static 'images/indexcontent/homejackpot/star.png' %}"
+                                                 class="item-row-img" alt="">
+                                            MIO*******95
+                                        </div>
+                                        <div class="item-row-money">
+                                            <img src="{% static 'images/indexcontent/homejackpot/games_money.png' %}"
+                                                 alt="" class="money-icon">
+                                            <div class="money-amount">
+                                                3,124,111,467
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-row">
+                                        <div class="item-row-name">
+                                            <img src="{% static 'images/indexcontent/homejackpot/star.png' %}"
+                                                 class="item-row-img" alt="">
+                                            THA*******96
+                                        </div>
+                                        <div class="item-row-money">
+                                            <img src="{% static 'images/indexcontent/homejackpot/games_money.png' %}"
+                                                 alt="" class="money-icon">
+                                            <div class="money-amount">
+                                                3,154,395,774
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-bottom-wrapper">
+            <div class="home-bottom">
+                <div class="home-bottom-tabs">
+                    <h4 class="tab-title">
+                        tin tức
+                    </h4>
+                    <div class="tabs-group d-flex ">
+                        <div class="tab-content" id="skbtn">
+                            <i class="fas fa-balance-scale-left tab-icon mr-1"></i>soi kèo bóng đá
+                        </div>
+                        <div class="tab-content" id="ndbtn">
+                            <i class="fas fa-futbol mr-1"></i>nhận định bóng đá
+                        </div>
+                        <div class="tab-content" id="phbtn">
+                            <i class="fas fa-film mr-1"></i>kho phim hd
+                        </div>
+                    </div>
+
+                    <div class="tab-content-soikeo" id="sk">
+                        <div class="feature-content">
+                            <img src="{% static 'images/indexcontent/homebottom/tabsoikeo/cate3_news1.jpg' %}" class="feature-content-img" alt="">
+                            <div class="feature-content-footer">dự đoán kết quả , soi kèo tất cả các giải đấu hấp dẫn nhất hành tinh</div>
+                        </div>
+                        <div class="soikeo-content">
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabsoikeo/cate1_news2.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        dự đoán kết quả - soi kèo cúp c1 champion league mới nhất
+                                    </div>
+                                    <div class="content-item-">
+                                        Chuyên mục dự đoán và soi kèo tất cả những trận đấu bóng đá hấp dẫn nhất...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabsoikeo/cate1_news3.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        dự đoán kết quả - soi kèo ngoại hạng anh mới nhất
+                                    </div>
+                                    <div class="content-item-">
+                                        Chuyên mục nhận định tỷ lệ kèo nhà cái chính xác nhất. Hãy cùng chúng tôi...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabsoikeo/cate1_news4.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        dự đoán kết quả - soi kèo bóng đá tây ban nha mới nhất
+                                    </div>
+                                    <div class="content-item-">
+                                        Chuyên mục soi kèo chính xác giúp bạn  dễ dàng chọn được kèo thơm có tỷ lệ thắng cao...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content-soikeo" id="nd">
+                        <div class="feature-content">
+                            <img src="{% static 'images/indexcontent/homebottom/tabnhandinh/cate2_news1.jpg' %}" class="feature-content-img" alt="">
+                            <div class="feature-content-footer">dự đoán kết quả , soi kèo tất cả các giải đấu hấp dẫn nhất hành tinh</div>
+                        </div>
+                        <div class="soikeo-content">
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabnhandinh/cate2_news2.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        bí quyết soi kèo bóng đá - casino - lô đề chính xác
+                                    </div>
+                                    <div class="content-item-">
+                                        Tổng hợp cách soi kèo đa thể loại chuẩn xác từ các chuyên gia ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabnhandinh/cate2_news3.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        789bet | nhà cái hàng đầu việt nam
+                                    </div>
+                                    <div class="content-item-">
+                                        Phân tích đánh giá khách quan từ các các nhà cái uy tín số 1 hiện nay ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabnhandinh/cate2_news4.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        các trò chơi cực hot khiến các bài thủ mê
+                                    </div>
+                                    <div class="content-item-">
+                                        Điểm danh tất cả các trò chơi phổ biến nhất hiện nay trên thế giới...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content-soikeo" id="ph">
+                        <div class="feature-content">
+                            <img src="{% static 'images/indexcontent/homebottom/tabphimhd/cate3_news1.jpg' %}" class="feature-content-img" alt="">
+                            <div class="feature-content-footer">dự đoán kết quả , soi kèo tất cả các giải đấu hấp dẫn nhất hành tinh</div>
+                        </div>
+                        <div class="soikeo-content">
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabphimhd/cate3_news2.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        tổng hợp phim nữ sinh ngây thơ cực hot 18+
+                                    </div>
+                                    <div class="content-item-">
+                                        Xem ngay những thước phim nữ sinh nóng bỏng với chất lượng full HD...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabphimhd/cate3_news3.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        tổng hợp phim full HD cực nét
+                                    </div>
+                                    <div class="content-item-">
+                                        Xem ngay những thước phim với những mẫu nữ nóng bỏng full HD...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="soikeo-content-item">
+                                <img src="{% static 'images/indexcontent/homebottom/tabphimhd/cate3_news4.jpg' %}" alt="" class="content-item-img">
+                                <div class="content-item">
+                                    <div class="content-item-title">
+                                        tổng hợp phim mẫu châu âu nóng bỏng
+                                    </div>
+                                    <div class="content-item-">
+                                        em ngay những thước phim nữ châu âu cực hot với chất lượng full HD...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="home-bottom-guide">
+                    <h4 class="tab-title">
+                        hướng dẫn
+                    </h4>
+                    <div class="guide-item">
+                        <i class="far fa-id-card"></i>
+                        <div class="guide-content">
+                            hướng dẫn đăng ký
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <i class="far fa-money-bill-alt"></i>
+                        <div class="guide-content">
+                            hướng dẫn nạp tiền
+                        </div>
+                    </div>
+                    <div class="guide-item">
+                        <i class="far fa-money-bill-alt"></i>
+                        <div class="guide-content">
+                            hướng dẫn rút tiền
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}

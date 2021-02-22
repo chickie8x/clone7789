@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="lottery-wrapper">
+        <div class="lottery">
+            <div class="lottery-content">
+                <div class="lottery-content-item lottery-item1">
+                    <img src="{% static 'images/jackpotpage/sub-lottery-ae_lot.png' %}" alt="" class="lottery-item-img">
+                    <div class="lottery-item-title">
+                        Lottery Lobby
+                    </div>
+                </div>
+                <div class="lottery-content-item lottery-item2">
+                    <img src="{% static 'images/jackpotpage/gpi.png' %}" alt="" class="lottery-item-img">
+                    <div class="lottery-item-title">
+                        GPI Viet Lottery
+                    </div>
+                </div>
+                <div class="lottery-content-item lottery-item3">
+                    <img src="{% static 'images/jackpotpage/gw.png' %}" alt="" class="lottery-item-img">
+                    <div class="lottery-item-title">
+                        GW Lobby
+                    </div>
+                </div>
+                <div class="lottery-content-item lottery-item4">
+                    <img src="{% static 'images/jackpotpage/vsl.png' %}" alt="" class="lottery-item-img">
+                    <div class="lottery-item-title">
+                        VSL Lobby
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

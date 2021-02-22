@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% if post %}
+    <div class="post-wrapper">
+        <div class="post">
+            <div class="post-title">
+                {{ post.title }}
+            </div>
+            <div class="post-desc">
+                {{ post.desc }}
+            </div>
+            <div class="post-content">
+                {{ post.content|safe }}
+            </div>
+            <div class="post-date">
+                {{ post.pubDate }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
