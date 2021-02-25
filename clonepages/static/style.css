@@ -21,7 +21,7 @@ div.sidebar {
 div.sidebar a {
     height: 71px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -527,22 +527,12 @@ span.close:hover {
         transition-duration: 0.5s;
     }
 
-    div#float-btn{
-        background-color: #f7ba22;
-        width: fit-content;
-        margin: 0 auto;
-        height: 50px;
-        padding: 0 10px;
-        text-align: center;
-        border-radius: 10px 10px 0 0;
-        color: white;
-        font-size: 14px;
-    }
-
 
     div.sidebar-content{
         background-color: #f7ba22;
         text-align: center;
+        display: flex;
+        flex-direction: row;
     }
 
 
@@ -551,6 +541,7 @@ span.close:hover {
         margin: auto;
         border: none;
         border-radius: 0;
+        font-size: 14px;
     }
 
 

@@ -4,42 +4,40 @@ $(document).ready(function () {
     function refreshTime() {
         let dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/bangkok"});
         let formattedString = dateString.replace(", ", " - ").replace("PM", "").replace("AM", "");
-        timeDisplay.innerHTML = '<i class="fas fa-clock pr-1"></i>'+ formattedString;
+        timeDisplay.innerHTML = '<i class="fas fa-clock pr-1"></i>' + formattedString;
     }
 
     setInterval(refreshTime, 1000);
 
-    $("select").on('change',function (e) {
+    $("select").on('change', function (e) {
         let theme = this.value;
         console.log(theme);
-        if(theme==='dark'){
-            $(".index-content-wrapper").css('background-color','#1f1f1f');
-             $(".index-wrapper").css('background-color','#1f1f1f');
-        }
-        else {
-            $(".index-content-wrapper").css('background-color','white');
-            $(".index-wrapper").css('background-color','white');
+        if (theme === 'dark') {
+            $(".index-content-wrapper").css('background-color', '#1f1f1f');
+            $(".index-wrapper").css('background-color', '#1f1f1f');
+        } else {
+            $(".index-content-wrapper").css('background-color', 'white');
+            $(".index-wrapper").css('background-color', 'white');
         }
 
     })
 
     window.onscroll = function () {
         let y = window.pageYOffset;
-        $(".dropdown-content").css('top',140-y)
+        $(".dropdown-content").css('top', 140 - y)
     };
     $("#btn-readmore").click(function () {
         let dis = $("#readmore")[0].style.display;
         let btn = $("#btn-readmore")[0];
         let dots = $("#dots")[0].innerText;
         console.log(dots)
-        if(dis != "block"){
-            $("#readmore").css('display','block');
-            $("#dots").css('display','none')
+        if (dis != "block") {
+            $("#readmore").css('display', 'block');
+            $("#dots").css('display', 'none')
             btn.innerHTML = "Rút gọn";
-        }
-        else{
-            $("#readmore").css('display','none');
-            $("#dots").css('display','inline-block')
+        } else {
+            $("#readmore").css('display', 'none');
+            $("#dots").css('display', 'inline-block')
             btn.innerHTML = "Xem thêm";
         }
 
@@ -49,41 +47,30 @@ $(document).ready(function () {
         this.parentElement.style.display = 'none';
     })
 
-    $("#skbtn").css('color','#f7ba22');
+    $("#skbtn").css('color', '#f7ba22');
     $("#skbtn").click(function () {
-        $("#sk").css('display','flex');
-        $("#nd").css('display','none');
-        $("#ph").css('display','none');
-        $("#skbtn").css('color','#f7ba22');
-        $("#ndbtn").css('color','unset');
-        $("#phbtn").css('color','unset');
+        $("#sk").css('display', 'flex');
+        $("#nd").css('display', 'none');
+        $("#ph").css('display', 'none');
+        $("#skbtn").css('color', '#f7ba22');
+        $("#ndbtn").css('color', 'unset');
+        $("#phbtn").css('color', 'unset');
     })
-        $("#ndbtn").click(function () {
-        $("#sk").css('display','none');
-        $("#nd").css('display','flex');
-        $("#ph").css('display','none');
-        $("#skbtn").css('color','unset');
-        $("#ndbtn").css('color','#f7ba22');
-        $("#phbtn").css('color','unset');
+    $("#ndbtn").click(function () {
+        $("#sk").css('display', 'none');
+        $("#nd").css('display', 'flex');
+        $("#ph").css('display', 'none');
+        $("#skbtn").css('color', 'unset');
+        $("#ndbtn").css('color', '#f7ba22');
+        $("#phbtn").css('color', 'unset');
     })
-        $("#phbtn").click(function () {
-        $("#sk").css('display','none');
-        $("#nd").css('display','none');
-        $("#ph").css('display','flex');
-        $("#skbtn").css('color','unset');
-        $("#ndbtn").css('color','unset');
-        $("#phbtn").css('color','#f7ba22');
-    })
-
-    $("#float-btn").click(function () {
-        let displayState = $(".sidebar")[0].style.bottom;
-        if(displayState!="0px"){
-            $(".sidebar")[0].style.bottom = "0px";
-        }
-        else {
-            $(".sidebar")[0].style.bottom = "-50px";
-        }
-
+    $("#phbtn").click(function () {
+        $("#sk").css('display', 'none');
+        $("#nd").css('display', 'none');
+        $("#ph").css('display', 'flex');
+        $("#skbtn").css('color', 'unset');
+        $("#ndbtn").css('color', 'unset');
+        $("#phbtn").css('color', '#f7ba22');
     })
 
 });
