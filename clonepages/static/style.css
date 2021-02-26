@@ -5,34 +5,6 @@ html {
 /*base template section*/
 
 
-div.sidebar {
-    width: 70px;
-    position: fixed;
-    z-index: 1;
-    top: 30%;
-    right: 15px;
-    overflow-x: hidden;
-    background-image: url("/static/images/sidebar/sidebarBG.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-
-}
-
-div.sidebar a {
-    height: 71px;
-    text-decoration: none;
-    font-size: 0px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.sidebar a:hover {
-    background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 5px;
-}
-
 .grids {
     display: grid;
 }
@@ -514,37 +486,6 @@ span.close:hover {
     }
 
 
-    div.sidebar {
-        width: 100%;
-        bottom: -50px;
-        border-radius: 0;
-        background-image: none;
-        right: 0;
-        margin: auto;
-        top: auto;
-        height: 100px;
-        overflow: hidden;
-        transition-duration: 0.5s;
-    }
-
-
-    div.sidebar-content{
-        background-color: #f7ba22;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    div.sidebar a {
-        padding: 16px 10px;
-        margin: auto;
-        border: none;
-        border-radius: 0;
-        font-size: 14px;
-    }
-
-
     div#wrapper {
         background: linear-gradient(180deg, #1e1e1e 71px, #1e1e1e 50%);
     }
@@ -651,102 +592,20 @@ span.notice-content {
 
 div.index-content-wrapper {
     background-color: #1f1f1f;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
-div.live-scrore {
-    width: 818px;
-    height: 147px;
-    background-image: url("/static/images/indexcontent/bg_hotmatch.png");
-    padding: 0 36px;
-    margin: 10px auto 50px auto;
-}
-
-div.score-header {
-    text-align: center;
-    color: #37fffe;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-div.score-body {
-    position: relative;
-    top: 0;
-}
-
-div.team1 {
-    position: absolute;
-    left: 10px;
-    width: 40%;
-}
-
-div.team2 {
-    position: absolute;
-    right: 10px;
-    width: 40%;
-}
-
-div.vs-center {
-    margin: auto;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-}
-
-div.team-name {
-    text-align: center;
-    text-transform: uppercase;
-    color: #fee468;
-    font-weight: bold;
-    width: 100%;
-}
-
-img.team-logo {
-    width: 20%;
-}
-
-div#team-name1 {
-    text-align: right;
-    padding-top: 10px;
-}
-
-div#team-name2 {
-    text-align: left;
-    padding-top: 10px;
-}
-
-div.score-footer {
-    width: 100%;
-}
-
-div.timezone {
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-div.bet {
-    width: 100%;
+div.index-banner{
     display: flex;
     justify-content: center;
-    position: relative;
+    width: 1350px;
+    margin: auto;
 }
 
-div.bet a {
-    position: absolute;
-    top: -5px;
-    text-decoration: none;
-    color: #27376b;
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-
-div.bet a:hover {
-    color: #fbeb4e;
-    transition-duration: 0.5s;
+img.index-banner-img{
+    width: 100%;
+    padding: 0 28px 10px 28px;
+    cursor: pointer;
 }
 
 /*hometype section*/
@@ -1179,17 +1038,14 @@ div.guide-item:hover {
         display: inline-grid;
     }
 
-    div.live-scrore {
+    div.index-banner{
         width: 100%;
-        background-image: none;
-        background-color: #1f1f1f;
-        padding: 0;
-        border-top: solid orange 2px;
-        border-bottom: solid orange 2px;
     }
 
-    div.score-header {
-        margin-top: 5px;
+    img.index-banner-img{
+        width: 100%;
+        padding: 0 0 15px 0;
+        cursor: pointer;
     }
 
     div.index-content-wrapper {
