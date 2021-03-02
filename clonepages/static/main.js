@@ -71,7 +71,10 @@ $(document).ready(function () {
         $("#skbtn").css('color', 'unset');
         $("#ndbtn").css('color', 'unset');
         $("#phbtn").css('color', '#f7ba22');
-    })
+    });
+
+
+    $(".carousel-item").first().addClass('active');
 
 });
 

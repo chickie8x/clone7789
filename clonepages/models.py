@@ -30,3 +30,11 @@ class Article(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         return super(Article, self).save(*args, **kwargs)
+
+
+class SlideManager(models.Model):
+    imgs = RichTextUploadingField()
+
+    def __str__(self):
+        return self.imgs
+

@@ -1,11 +1,18 @@
 from django.shortcuts import render
 
 # Create your views here.
-from clonepages.models import Article
+from clonepages.models import Article,SlideManager
+
+
 
 
 def index(request):
-    return render(request,'clonepages/index.html',{})
+    imgs=[]
+    slideobject = str(SlideManager.objects.all()[0]);
+    splitObject = slideobject.split(" ")
+    imgs.append(splitObject[3][5:-1])
+    imgs.append(splitObject[8][5:-1])
+    return render(request,'clonepages/index.html',{'images':imgs})
 
 
 def sport(request):
